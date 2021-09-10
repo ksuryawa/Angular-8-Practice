@@ -1,0 +1,36 @@
+<p>task05 works!</p>
+
+
+<br>
+
+Emp Id :: <input #tempId id="empid" placeholder="Enter employee id"><br>
+Emp Name :: <input #tempName id="empName" placeholder="Enter employee name"><br>
+Salary :: <input #tempSalary id="salary" placeholder="Enter employee salary"> <br>
+
+<button (click)="OnAdd(tempId,tempName,tempSalary)">Add</button>
+
+
+<button (click)="OnRemoveAll()">Remove All</button>
+
+<br>
+<hr>
+
+<table id="myTable">
+    <thead>
+        <th>Index</th>
+        <th>Empid</th>
+        <th>Emp Name</th>
+        <th>Salary</th>
+        <th>Action</th>
+
+    </thead>
+    <tbody *ngFor="let item of myJson;let i = index">
+        <tr > 
+          <td>{{i+1}}</td>
+            <td>{{item.eid}}</td>
+            <td>{{item.eName}}</td>
+            <td>{{item.eSalary}}</td>
+            <td><button (click)="OnRemove(i)">Remove</button></td>
+        </tr>
+    </tbody>
+</table>

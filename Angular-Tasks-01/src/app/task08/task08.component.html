@@ -1,0 +1,21 @@
+<p>task08 works!</p>
+<h2>Task no 8 :- Check given number is even or odd using ngIf directive.</h2>
+
+<input #ref placeholder="Enter Number" value="0">
+<br><br>
+<button 
+(click)="OnClick(ref.value)"
+>Click me</button>
+
+
+<div *ngIf="isEven==true;then mainpart else elsepart1">
+
+</div>
+
+<ng-template #mainpart>
+        <h3>Number is Even</h3>        
+</ng-template>
+
+<ng-template #elsepart1>
+    <h3>Number is odd</h3>
+</ng-template>

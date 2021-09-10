@@ -1,0 +1,21 @@
+<p>home works!</p>
+<app-notification></app-notification>
+<hr>
+<a routerLink="" >Page 1</a>
+<a [routerLink]="['/Page2',myNumber]">Page 2</a>
+<a routerLink="/QueryParameter" [queryParams]="myObj">QueryParameter</a>
+
+<br>
+<br>
+
+<hr>
+
+<button (click)="OnPage1()">Page 1</button>
+<button (click)="OnPage2()">Page 2</button>
+<button (click)="OnQueryParam()">QueryParameter</button>
+
+<hr>
+<div>
+    <router-outlet></router-outlet>
+</div>
+

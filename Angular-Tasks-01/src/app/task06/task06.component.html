@@ -1,0 +1,15 @@
+<p>task06 works!</p>
+<p>
+    Task no 6 :- Using two way binding, web page contain two input text & one button. One input text is used to take input from user another input text is used to display output. Find numer is prime number or not click on button.
+    e.g input = 3 (From first input text)
+    output = Number is prime number (on 2nd input text display this string).
+
+</p>
+<hr>
+
+<input [(ngModel)]="myNumber" placeholder="Enter the number">
+<br><br>
+<button (click)="CheckPrimeOrNot()">Click if to check Prime number</button>
+<br>
+<input placeholder="Enter the number" [value]="result"> 
+

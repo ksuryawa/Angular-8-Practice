@@ -1,0 +1,20 @@
+<p>Task no 2 :- Find square & cube of number on click event use as radio button. Take number as hard coded for time being & display the result in another text box, square & cube respectively.</p>
+
+<h1>Math Calculation</h1>
+
+Number :: <input [(ngModel)]="myNumber" placeholder="Enter number here..">
+<br>
+
+  <input type="radio" name="radio" id="square"  (click)="CalcSquare()">
+  <label for="square">Square</label>
+  
+  <br>
+
+  <input class="cal" type="radio" name="radio" id="cube" (click)="CalcCube(myNumber.value)">
+  <label for="cube">Cube</label>
+
+<hr>
+<label>Result ::</label>
+<input text="" name="result" [value]="myResult">
+
+

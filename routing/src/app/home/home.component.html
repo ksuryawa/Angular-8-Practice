@@ -1,0 +1,26 @@
+<p>home works!</p>
+
+<a [routerLink]="['/Page1',mySum]" >Page 1</a>
+<a [routerLink]="['/Page2',myid,myName]">Page 2</a>
+<a [routerLink]="['/Page3',myNumber]">Page 3</a>
+<a routerLink="/Follower">Follower</a>
+<a routerLink="/QueryParameter" [queryParams]="myjsonObj">QueryParameter</a>
+
+<br>
+<br>
+<hr>
+<input placeholder="Enter your number1" [(ngModel)]="myNumber">
+
+<input placeholder="Enter your number2" [(ngModel)]="myNumber2">
+
+<button (click)="OnClick()"> Sum...</button>
+
+{{mySum}}
+
+<hr>
+
+<button (click)="OnPage1()">Page 1</button>
+<button (click)="OnPage2()">Page 2</button>
+<button (click)="OnPage3()">Page 3</button>
+<button (click)="OnFollower()">Follower</button>
+<button (click)="OnQueryParam()">QueryParameter</button>

@@ -1,0 +1,8 @@
+<p>task03 works!</p>
+<div  #myTag><strong>Task no 3 :- Apply Class Binding to button, when button on click to change text style to italic & text color should be change.</strong> </div>
+<br>
+
+<button [class.clicked]="isClicked?true:false" (click)="OnClick()"
+(mouseout)="NoClick()"
+
+>Click Me</button>

@@ -1,0 +1,12 @@
+<p>task09 works!</p>
+<p>
+    Task no 9 :- Change the width of input box when user enter the number in input box (Asked in interview).
+</p>
+
+<input #name type="text" placeholder="Enter the number"
+(change)="OnChange(name)"
+>
+
+<input  type="text" placeholder="Enter the number1"
+[(ngModel)]="mySize" [size]="mySize"
+>

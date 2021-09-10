@@ -1,0 +1,15 @@
+<p>task11 works!</p>
+<hr>
+<p>
+    Task no 11 :- Write a Program to send rating(as number) from parent component to child component. In child component check whether rating is less than 6 then apply background color to div as ‘red’ else apply ‘green’ color.
+</p>
+<hr>
+<input #ref placeholder="Enter Rating"><br><br>
+<button
+(click)="OnClick(ref.value)"
+>Click Me from Parent</button>
+<app-task11-child
+[Task11ParentData]="rating"
+></app-task11-child>
+<hr>
+
